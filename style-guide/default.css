@@ -1,0 +1,54 @@
+#main-color {
+  height: 110px;
+  width: 110px;
+  background-color: #1032A0;
+  color: #BBC6EC;
+  padding: 10px;
+}
+#secondary-color {
+  height: 110px;
+  width: 110px;
+  background-color: #5174E9;
+  padding: 10px;
+}
+#third-color {
+  height: 110px;
+  width: 110px;
+  background-color: #BBC6EC;
+  padding: 10px;
+}
+#lato {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+#merriweather {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  text-align: center;
+}
+#colors {
+  border: 5px solid black;
+}
+#font-styles {
+  text-align: center;
+}
+#official-colors {
+  text-align: center;
+}
+h1, h3 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+h4 {
+  font-size: 24px;
+  font-family:'Merriweather', serif;
+  margin-top: 30px;
+}
+h1 {
+  margin-top: 10px;
+  font-size: 48px;
+}
+h3 {
+  margin: 0;
+}
