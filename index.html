@@ -28,21 +28,23 @@
                 <option>Long Beach</option>
               </select>
             </fieldset>
+            <p> OR</p>
             <fieldset class="form-group">
               <label for="Search">Search by Proximity:</label>
               <input type="text" class="form-control" id="zip" placeholder="Zip Code">
             </fieldset>
             <fieldset class="form-group">
-              <label for="Search">Phone Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="Search">Email</label>
-              <input type="text" class="form-control" id="email" placeholder="Email">
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="Search">Message/Comments</label>
-              <input type="text" class="form-control" id="message" placeholder="Message">
+              <label for="Search">Distance from Zip Code</label>
+              <select class="form-control" id="miles">
+                <option>5 miles</option>
+                <option>10 miles</option>
+                <option>15 miles</option>
+                <option>20 miles</option>
+                <option>30 miles</option>
+                <option>40 miles</option>
+                <option>50 miles</option>
+                <option>50+ miles</option>
+              </select>
             </fieldset>
             <button class="btn btn-primary" type="submit" id="submit">Submit</button>
           </form>

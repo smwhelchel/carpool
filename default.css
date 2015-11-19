@@ -10,6 +10,9 @@ label {
 input {
   font-family: 'Merriweather', sans-serif;
 }
+fieldset {
+  font-family: 'Merriweather', sans-serif;
+}
 #logo {
   float: right;
   padding: 10px;
@@ -36,6 +39,7 @@ input {
   color: #1032A0;
   border-radius: 10px;
   width: 100px;
+  margin-bottom: 10px;
 }
 #sign {
   margin-top:50px;
