@@ -51,13 +51,18 @@ fieldset {
 #find {
   font-weight: bold;
 }
-#bill-quote {
+#bill-quote, #steve-quote, #jack-quote {
   border-bottom: 2px dotted #5174E9;
   padding: 5px;
 }
 #bill {
   height: 150px;
   margin-top: 30px;
+  margin-bottom: 10px;
+}
+#steve, #jack {
+  height: 150px;
+  margin-bottom: 10px;
 }
 #sky {
   background-image: url(http://www.mrwallpaper.com/wallpapers/doubled-freeway-at-night-1600x900.jpg);
