@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  font-family: 'Lato', serif;
+}
+h3, h4 {
+  font-family: 'Lato', serif;
+}
+p {
+  font-family: 'Merriweather', sans-serif;
+}
+label {
+  font-family: 'Lato', serif;
+}
+input {
+  font-family: 'Merriweather', sans-serif;
+}
+#about {
+  border-bottom: 5px solid #5174E9;
+}
+#no-traffic-img {
+  float: right;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+#about-us-border {
+  height: 5px;
+  width: 100%;
+  background-color: #5174E9;
+}
+#share-a-car {
+  float: left;
+}
+/*#background {
+  background-image: url(href="traffic.JPG");
+}*/
+/*#message {
+  height: 100px;
+}*/
+#submit {
+  font-family: 'Lato', serif;
+  background-color: #BBC6EC;
+  color: #1032A0;
+  border-radius: 10px;
+  width: 100px;
+}
+#sign {
+  margin-top:50px;
+  float: left;
+}
