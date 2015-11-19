@@ -25,11 +25,6 @@ fieldset {
   margin-right: 100px;
   margin-top: 50px;
 }
-#about-us-border {
-  height: 5px;
-  width: 100%;
-  background-color: #5174E9;
-}
 #share-a-car {
   float: left;
 }
@@ -39,7 +34,7 @@ fieldset {
   color: #1032A0;
   border-radius: 10px;
   width: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #sign {
   margin-top:50px;
@@ -50,9 +45,25 @@ fieldset {
   padding: 20px;
 }
 #form {
-  background-color: #B6B6B4;
+  background-color: rgba(182, 182, 180, 0.7);
   padding: 5px 20px 20px 20px;
 }
 #find {
   font-weight: bold;
+}
+#bill-quote {
+  border-bottom: 2px dotted #5174E9;
+  padding: 5px;
+}
+#bill {
+  height: 150px;
+  margin-top: 30px;
+}
+#sky {
+  background-image: url(http://www.mrwallpaper.com/wallpapers/doubled-freeway-at-night-1600x900.jpg);
+  padding: 20px;
+}
+#contact-us {
+  background-color: rgba(182, 182, 180, 0.5);
+  padding: 5px 20px 20px 20px;
 }
