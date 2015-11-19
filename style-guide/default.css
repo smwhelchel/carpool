@@ -20,6 +20,12 @@
   background-color: #BBC6EC;
   padding: 10px;
 }
+#fourth-color {
+  height: 110px;
+  width: 110px;
+  background-color: #B6B6B4;
+  padding: 10px;
+}
 #merriweather {
   font-family: 'Merriweather', serif;
   font-size: 18px;
