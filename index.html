@@ -6,17 +6,15 @@
     <link rel="stylesheet" type="text/css" href="default.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h1> Carpool</h1>
+          <img src="Drawing.png" class="img-responsive" id="logo">>
         </div>
-      <div class="row">
-        <div class="col-md-8">
-          <img src="map.png" class="img-responsive" id="map">
-        </div>
+      <div class="row" id="background-image">
         <div class="col-md-4">
-          <form>
+          <form id="form">
+            <h3 id="find">Find A Carpool:</h3>
             <fieldset class="form-group">
               <label for="Search">Search by City:</label>
               <select class="form-control" id="sel1">
@@ -24,6 +22,10 @@
                 <option>Tustin</option>
                 <option>Anaheim</option>
                 <option>Newport Beach</option>
+                <option>Santa Ana</option>
+                <option>Mission Viejo</option>
+                <option>Cerritos</option>
+                <option>Long Beach</option>
               </select>
             </fieldset>
             <fieldset class="form-group">
