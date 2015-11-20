@@ -1,7 +1,7 @@
 h3, h4 {
   font-family: 'Lato', serif;
 }
-p {
+p, li, ul {
   font-family: 'Merriweather', sans-serif;
 }
 label {
@@ -48,10 +48,12 @@ fieldset {
 #background-image {
   background-image: url(map.png);
   padding: 20px;
+  border-top: 5px solid #1032A0;
 }
-#form {
+#form, #form2 {
   background-color: rgba(182, 182, 180, 0.7);
   padding: 5px 20px 20px 20px;
+  color: #5174E9;
 }
 #find {
   font-weight: bold;
@@ -68,6 +70,7 @@ fieldset {
 #steve {
   height: 150px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 #jack {
   height: 150px;
@@ -79,7 +82,11 @@ fieldset {
 #contact-us {
   background-color: rgba(182, 182, 180, 0.5);
   padding: 5px 20px 20px 20px;
+  color: #1032A0;
 }
 #sm-icons {
   word-spacing: 20px;
+}
+#list-view, #list-view2 {
+  padding: 30px;
 }
