@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="default.css">
 </head>
@@ -10,9 +13,23 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
+        <!--Header-->
         <img src="Drawing.png" class="img-responsive" id="logo">
       </div>
     </div>
+    <!--nav-->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="nav">
+          <ul>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Map form-->
     <div class="row" id="background-image">
       <div class="col-md-4">
         <form id="form">
@@ -53,7 +70,47 @@
       </div>
     </div>
   </div>
-  <div class="row">
+    <!--modal-->
+    <!--<form class="form-horizontal" role="form">
+       <img src="map.png" style="min-height:300px;height:300px;" data-toggle="modal" data-target="#myModal" alt="Responsive image">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">Join A Carpool:</h4>
+              <form id="join">
+                <fieldset class="form-group">
+                  <label for="Search">Carpool ID:</label>
+                  <input type="text" class="form-control" id="id-join" placeholder="Carpool ID">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="Search">Name:</label>
+                  <input type="text" class="form-control" id="name-join" placeholder="Name">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="Search">Address:</label>
+                  <input type="text" class="form-control" id="address-join" placeholder="Address">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="Search">Phone:</label>
+                  <input type="text" class="form-control" id="phone-join" placeholder="Phone">
+                </fieldset>
+                <fieldset class="form-group">
+                  <label for="Search">Email:</label>
+                  <input type="text" class="form-control" id="name-join" placeholder="Email">
+                </fieldset>
+                <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+                <p> Thanks for choosing Carpool. We will verify your information and be contacting you shortly with meeting and contact information for your Carpool group.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>-->
+
+  <!--<div class="row">
       <div class="col-md-4">
         <form id="form2">
           <h3 id="find">Find A Carpool:</h3>
@@ -104,8 +161,8 @@
           <li> Kim's Carpool: Tustin, CA<br>Mixed<br>Restaurant<br>3 females, 2 males<br>7am-4pm</li><br>
         </ul>
       </div>
-    </div>
-  <div id="gradient">
+    </div>-->
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 col-sm-12">
@@ -136,8 +193,9 @@
         </form>
       </div>
     </div>
-    </div>
   </div>
+
+  <!--About Us Page-->
   <div class="container">
     <div class="row">
       <div class="col-md-12" "col-sm-12">
@@ -169,6 +227,7 @@
       </div>
     </div>
   </div>
+  <!--Contact Us Page-->
   <div id="sky">
     <div class="container-fluid">
       <div class="row">
@@ -205,10 +264,11 @@
       </div>
     </div>
   </div>
+  <!--Testimonials-->
   <div class="container">
     <div class="row">
       <div class="col-md-10">
-        <h3> What People Are Saying About Us</h3>
+        <h3 id="testimonials"> What People Are Saying About Us</h3>
         <div id="bill-quote">
           <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Bill Gates: Long Beach, CA</p>
         </div>
@@ -246,5 +306,88 @@
         </div>
       </div>
     </div>
-  </body>
+    </div>
+      <div class="container-fluid" id="connected-background">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <img src="stay-connected.png" class="img-responsive" id="connected">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1" id="stay-connected">
+            <img src="get-started.png" class="img-responsive" id="get-started">
+          </div>
+          <div class="col-md-4">
+            <h3 id="newsletter"> Newsletter</h3>
+            <form id="newsletter">
+              <fieldset class="form-group">
+                <input type="text" class="form-control" id="newsletter-form" placeholder="Email">
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary" type="submit" id="newsletter-button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </body> 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="company-info">Carpool Corporate Headquarters:<br>4141 Carpool Way<br>Irvine, CA 92679</br>949-647-9765</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
+
+<!--<div class="modal fade" id="_name-of-form_" tabindex="-1" role="dialog" aria-labelledby="my-checkout-form">
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Join A Carpool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <form id="join">
+          <h3 id="join1">Join A Carpool:</h3>
+          <fieldset class="form-group">
+            <label for="Search">Carpool ID:</label>
+            <input type="text" class="form-control" id="id-join" placeholder="Carpool ID">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="Search">Name:</label>
+            <input type="text" class="form-control" id="name-join" placeholder="Name">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="Search">Address:</label>
+            <input type="text" class="form-control" id="address-join" placeholder="Address">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="Search">Phone:</label>
+            <input type="text" class="form-control" id="phone-join" placeholder="Phone">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="Search">Email:</label>
+            <input type="text" class="form-control" id="name-join" placeholder="Email">
+          </fieldset>
+          <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+          <p> Thanks for choosing Carpool. We will verify your information and be contacting you shortly with meeting and contact information for your Carpool group.</p>
+        </form>
+      </div>
+    </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>-->
