@@ -1,0 +1,151 @@
+h3, h4 {
+  font-family: 'Lato', serif;
+}
+p, li, ul, span {
+  font-family: 'Merriweather', sans-serif;
+}
+label {
+  font-family: 'Lato', serif;
+}
+input {
+  font-family: 'Merriweather', sans-serif;
+}
+fieldset, form {
+  font-family: 'Merriweather', sans-serif;
+}
+#span {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+#logo {
+  float: left;
+  padding: 10px;
+  height: 70%;
+  width: 70%;
+}
+#about {
+  border-bottom: 5px solid #5174E9;
+}
+#no-traffic-img {
+  float: right;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+#share-a-car {
+  float: left;
+}
+#submit, #newsletter-button {
+  font-family: 'Lato', serif;
+  background-color: #BBC6EC;
+  color: #1032A0;
+  border-radius: 10px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+#sign {
+  margin-top:50px;
+  float: left;
+}
+#background-image {
+  background-image: url(../images/map.png);
+  padding: 20px;
+  border-top: 5px solid #1032A0;
+}
+#form, #form2 {
+  background-color: rgba(182, 182, 180, 0.7);
+  padding: 5px 20px 20px 20px;
+  color: #5174E9;
+}
+#find {
+  font-weight: bold;
+}
+#bill-quote, #steve-quote, #jack-quote {
+  border-bottom: 2px dotted #5174E9;
+  padding: 5px;
+}
+#bill {
+  height: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+#steve {
+  height: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#jack {
+  height: 150px;
+}
+#sky {
+  background-image: url(http://www.mrwallpaper.com/wallpapers/doubled-freeway-at-night-1600x900.jpg);
+  padding: 20px;
+}
+#contact-us {
+  background-color: rgba(182, 182, 180, 0.5);
+  padding: 5px 20px 20px 20px;
+  color: #1032A0;
+}
+#sm-icons {
+  word-spacing: 20px;
+}
+#list-view, #list-view2 {
+  padding: 30px;
+}
+#nav ul li{
+  float: right;
+  display: inline;
+  padding: 20px;
+  font-weight: bold;
+}
+#company-info {
+  float: right;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 12px;
+  text-align: right;
+}
+#social-media {
+  margin-bottom: 20px;
+}
+#connected-background {
+  background-image: url(../images/roads.jpg);
+  margin-bottom: 20px;
+  height: 293px;
+  border-top: 2px solid #1032A0;
+  border-bottom: 2px solid #1032A0;
+}
+#connected {
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+#newsletter-button {
+  float: right;
+  margin-top: 55px;
+  margin-right: 30px;
+}
+#sm-border {
+  height: 5px solid #1032A0;
+}
+#newsletter {
+  width: 400px;
+  margin-left: 50px;
+}
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+#small-map {
+  position: relative;
+  background-image: url(../images/small-map.png);
+  height: 300px;
+  width: 100%;
+  margin-left: 0;
+}
+#gradient > .horizontal(#333; #000); {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
