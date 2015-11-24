@@ -19,8 +19,10 @@ fieldset {
   font-weight: bold;
 }
 #logo {
-  float: right;
+  float: left;
   padding: 10px;
+  height: 70%;
+  width: 70%;
 }
 #about {
   border-bottom: 5px solid #5174E9;
@@ -46,7 +48,7 @@ fieldset {
   float: left;
 }
 #background-image {
-  background-image: url(map.png);
+  background-image: url(images/map.png);
   padding: 20px;
   border-top: 5px solid #1032A0;
 }
@@ -106,7 +108,7 @@ fieldset {
   margin-bottom: 20px;
 }
 #connected-background {
-  background-image: url(roads.jpg);
+  background-image: url(images/roads.jpg);
   margin-bottom: 20px;
   height: 293px;
   border-top: 2px solid #1032A0;
@@ -128,3 +130,34 @@ fieldset {
   width: 400px;
   margin-left: 50px;
 }
+.carousel-control.left, 
+.carousel-control.right {
+    background-image: none
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+#small-map {
+  position: relative;
+  background-image: url(images/small-map.png);
+  height: 300px;
+  width: 100%;
+  margin-left: 0;
+}
+#gradient > .horizontal(#333; #000); {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*#search-ride-form {
+  background-color: rgb(187, 198, 236);
+  height: 200px;
+  width: 450px;
+  padding-top:20px;
+}
+#search-form {
+  width: 300px;
+}
+#search-ride {
+  display: inline;
+}*/
