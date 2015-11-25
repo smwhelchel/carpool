@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato|Merriweather' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
   </head>
   <body>
     <div class="container-fluid">
@@ -20,10 +20,11 @@
         <div class="col-md-8">
           <div id="nav">
             <ul>
-              <li>Testimonials</li>
+              <li><a href="testimonials.html">Testimonials</a></li>
               <li>Carpool Benefits</li>
-              <li>Create A Pool</li>
+              <li>Create A Carpool</li>
               <li> Find A Ride</li>
+              <li><a href="about.html">About</a></li>
             </ul>
           </div>
         </div>
@@ -57,10 +58,11 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
       <div class="row">
         <div class="col-md-7">
           <div id="small-map">
+            <div id="gradient">
+            </div>
           </div>
         </div>
         <div class="col-md-4">
@@ -73,8 +75,22 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid" id="savings">
+      <div class="row">
+        <div class="col-md-6">
+          <h3> A New Way To Commute</h3>
+          <h4 id="times"> Save Time!</h4>
+          <h4 id="money"> Save Money!</h4>
+          <h4 id="planet"> Save The Planet!</h4>
+        </div>
+        <div class="col-md-6" id="saved">
+          <h4> Average yearly savings</h4>
+          <h4 id="dollars"> $1,800</h4>
+        </div>
+      </div>
+    </div>
 
-      <div class="container">
+      <!--<div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 col-sm-12">
           <form id="join">
@@ -104,123 +120,38 @@
           </form>
         </div>
       </div>
-    </div>
+    </div>-->
 
-  <!--About Us Page-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12" "col-sm-12">
-          <h3 id="about"> About us</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6" "col-sm-12">
-          <h4> What is Carpool?</h4>
-          <p> Carpool is a ridesharing service for working professionals that was founded in Orange County in 2015. It was built on the belief that people waste too much time sitting in their cars. That time could be better utilized doing productive things. Carpool helps to ease that wasted time, by decreasing time of commutes, and allowing people to make connections with other professionals in the area.</p>
-          <h4> Why Carpool?</h4>
-          <ul>
-            <li> Saves time spent sitting on the freeway</li>
-            <li> Saves money on gas</li>
-            <li> Allows you to make new friends with other professionals</li>
-            <li> Helps lower your carbon footprint</li>
-          </ul>
-          <h4> Who does it benefit?</h4>
-          <p> Carpool is for working professionals who want to save time and money on their commutes. If you are a professional with a long commute, Carpool is perfect for you!</p>
-          <h4> How it works:</h4>
-          <p>Use the "Find A Carpool" map to find a carpool located near you. Fill out the form and submit your information. Allow our customer service representatives 48 hours to process the information. They will contact you regarding meeting places and other carpool members contact information. Then start carpooling away!</p>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <img src="http://www.rapc.info/Transportation/TDM/image/carpool.JPG" class="img-responsive" id="no-traffic-img">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12" id="about-us-border"> 
-        </div>
-      </div>
-    </div>
-  <!--Contact Us Page-->
-    <div id="sky">
+  
+  <!--Contact Us Page
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <form id="contact-us">
-              <h3> Contact Us</h3>
-              <fieldset class="form-group">
-                <label for="ContactUs">Name:</label>
-                <input type="text" class="form-control" id="name" placeholder="Name">
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="ContactUs">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="Address">
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="ContactUs">Phone Number</label>
-                <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="ContactUs">Email</label>
-                <input type="text" class="form-control" id="email" placeholder="Email">
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="ContactUs">Message/Comments</label>
-                <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
-              </fieldset>
+        <div class="row" id="questions-row">
+          <div class="col-md-6">
+            <div id="questions-div">
+            <h3> Questions?</h3>
+            <span>1-800-655-5566</span><br>
+            <span> customerservice@carpool.com</span>
+            </div>
+            <form id="questions">
+              <h3> Send us a message:</h3>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" id="questions-email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
               <button class="btn btn-primary" type="submit" id="submit">Submit</button>
             </form>
           </div>
-        </div>
-      </div>
       <div class="row">
         <div class="col-md-12" id="contact-border">
         </div>
       </div>
     </div>
-  <!--Testimonials-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-          <h3 id="testimonials"> What People Are Saying About Us</h3>
-          <div id="bill-quote">
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Bill Gates: Long Beach, CA</p>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <img src="http://www.popsci.com/sites/popsci.com/files/bill_gates_july_2014.jpg" class="img-responsive" id="bill">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2">
-          <img src="http://ia.media-imdb.com/images/M/MV5BNTI4NTk3NjU1MF5BMl5BanBnXkFtZTcwMTQ5MDg4Ng@@._V1_UY317_CR10,0,214,317_AL_.jpg" class="img-responsive" id="steve">
-        </div>
-        <div class="col-md-10">
-          <div id="steve-quote">
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Steve Jobs: Anaheim, CA</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-10">
-          <div id="jack-quote">
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Jack Dorsey: Irvine, CA</p>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jack_Dorsey_2014.jpg/220px-Jack_Dorsey_2014.jpg" class="img-responsive" id="jack">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12" id="social-media">
-          <span id="span"> People love us on:</span><br>
-          <span id="sm-icons"><a href="http://yelp.com"><i class="fa fa-yelp fa-2x" id="yelp">Yelp</i></a>
-            <a href="http://facebook.com"><i class="fa fa-facebook-official fa-2x" id="facebook">Facebook</i></a>
-            <a href="http://twitter.com"><i class="fa fa-twitter fa-2x" id="twitter">Twitter</i></a><span>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>-->
     <div class="container-fluid" id="connected-background">
       <div class="row">
-        <div class="col-md-3 col-md-offset-1">
+        <div class="col-md-3">
           <img src="images/stay-connected.png" class="img-responsive" id="connected">
         </div>
       </div>
@@ -230,25 +161,32 @@
         </div>
         <div class="col-md-4">
           <h3 id="newsletter"> Newsletter</h3>
-          <form id="newsletter">
-            <fieldset class="form-group">
-              <input type="text" class="form-control" id="newsletter-form" placeholder="Email">
-            </fieldset>
-          </form>
-        </div>
-        <div class="col-md-2">
-          <button class="btn btn-primary" type="submit" id="newsletter-button">Subscribe</button>
-      </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Subscribe</button>
+            </span>
+          </div>
     </div>
     </div>
+  </div>
   </body> 
-  <footer>
+  <!--<footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div id="company-info">Carpool Corporate Headquarters:<br>4141 Carpool Way<br>Irvine, CA 92679</br>949-647-9765</div>
+        <div class="col=md-4">
+            <div id="social-media-nav">
+            <ul>
+              <li><a href="http://yelp.com"><i class="fa fa-yelp fa-2x" id="yelp"></i></a>
+              <li><a href="http://facebook.com"><i class="fa fa-facebook-official fa-2x" id="facebook"></i></a>
+              <li><a href="http://twitter.com"><i class="fa fa-twitter fa-2x" id="twitter"></i></a>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div id="company-info">Headquarters:<br>4141 Carpool Way<br>Irvine, CA 92679</br>800-655-5566</div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer>-->
 </html>

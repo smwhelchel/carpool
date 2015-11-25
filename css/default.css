@@ -121,7 +121,7 @@ fieldset, form {
 #newsletter-button {
   float: right;
   margin-top: 55px;
-  margin-right: 30px;
+  margin-left: 50px;
 }
 #sm-border {
   height: 5px solid #1032A0;
@@ -129,6 +129,7 @@ fieldset, form {
 #newsletter {
   width: 400px;
   margin-left: 50px;
+  color: #BBC6EC;
 }
 .carousel-control.left, 
 .carousel-control.right {
@@ -144,8 +145,51 @@ fieldset, form {
   width: 100%;
   margin-left: 0;
 }
-#gradient > .horizontal(#333; #000); {
+#gradient {
   height: 100%;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right, transparent, white);
+}
+#social-media-nav ul li{
+  display: inline;
+  float: left;
+  padding: 10px;
+}
+#questions-row {
+  height: 350px;
+  width: 100%;
+  background-color: #5174E9;
+  margin: 0;
+}
+#questions-div {
+  text-align: center;
+}
+#search-ride-form {
+  background-color: white;
+  margin-top: 70px;
+}
+#savings {
+  height: 200px;
+  width: 100%;
+  color: #1032A0;
+  margin: 0;
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #5175E9),
+  color-stop(1, #BBC6EC)
+);
+}
+#saved {
+  text-align: center;
+  margin-top: 30px;
+}
+#dollars {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 72px;
 }
