@@ -13,17 +13,6 @@ input {
 fieldset, form {
   font-family: 'Merriweather', sans-serif;
 }
-#span {
-  font-family: 'Merriweather', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-#logo {
-  float: left;
-  padding: 10px;
-  height: 70%;
-  width: 70%;
-}
 #about {
   border-bottom: 5px solid #5174E9;
 }
@@ -32,9 +21,7 @@ fieldset, form {
   margin-right: 100px;
   margin-top: 50px;
 }
-#share-a-car {
-  float: left;
-}
+
 #submit, #newsletter-button {
   font-family: 'Lato', serif;
   background-color: #BBC6EC;
@@ -110,6 +97,7 @@ fieldset, form {
 #connected-background {
   background-image: url(../images/roads.jpg);
   margin-bottom: 20px;
+  margin-top: 20px;
   height: 293px;
   border-top: 2px solid #1032A0;
   border-bottom: 2px solid #1032A0;
@@ -117,11 +105,6 @@ fieldset, form {
 #connected {
   padding-bottom: 30px;
   margin-top: 20px;
-}
-#newsletter-button {
-  float: right;
-  margin-top: 55px;
-  margin-left: 50px;
 }
 #sm-border {
   height: 5px solid #1032A0;
@@ -192,4 +175,7 @@ fieldset, form {
 #dollars {
   font-family: 'Merriweather', sans-serif;
   font-size: 72px;
+}
+#near-you {
+  text-align: center;
 }
