@@ -22,7 +22,7 @@ fieldset, form {
   margin-top: 50px;
 }
 
-#submit, #newsletter-button {
+#submit, #newsletter-button, #subscribe-button, #search-ride {
   font-family: 'Lato', serif;
   background-color: #BBC6EC;
   color: #1032A0;
