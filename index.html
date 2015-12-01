@@ -21,10 +21,9 @@
           <div id="nav">
             <ul>
               <li id="get-testimonials"><a href="#testimonials">Testimonials</a></li>
-              <li>Carpool Benefits</li>
-              <li>Create A Carpool</li>
+              <li id="create-nav"><a href="#create-hide">Create A Carpool</a></li>
               <li><a href="#search-ride-form"> Find A Ride</a></li>
-              <li><a href="about.html">About</a></li>
+              <li id="about-nav"><a href="#about-page">About</a></li>
             </ul>
           </div>
         </div>
@@ -173,20 +172,104 @@
     </div>
   </div>
 
-    <!--<div class="container-fluid" id="savings">
-      <div class="row">
-        <div class="col-md-6">
-          <h3> A New Way To Commute</h3>
-          <h4 id="times"> Save Time!</h4>
-          <h4 id="money"> Save Money!</h4>
-          <h4 id="planet"> Save The Planet!</h4>
+  <div class="hidden" id="about-page">
+  <div class="container">
+        <div class="row">
+          <div class="col-md-12" "col-sm-12">
+            <h3 id="about"> About us</h3>
+          </div>
         </div>
-        <div class="col-md-6" id="saved">
-          <h4> Average yearly savings</h4>
-          <h4 id="dollars"> $1,800</h4>
+        <div class="row">
+          <div class="col-md-6" "col-sm-12">
+            <h4> What is Carpool?</h4>
+            <p> Carpool is a ridesharing service for working professionals that was founded in Orange County in 2015. It was built on the belief that people waste too much time sitting in their cars. That time could be better utilized doing productive things. Carpool helps to ease that wasted time, by decreasing time of commutes, and allowing people to make connections with other professionals in the area.</p>
+            <h4> Why Carpool?</h4>
+            <ul>
+              <li> Saves time spent sitting on the freeway</li>
+              <li> Saves money on gas</li>
+              <li> Allows you to make new friends with other professionals</li>
+              <li> Helps lower your carbon footprint</li>
+            </ul>
+            <h4> Who does it benefit?</h4>
+            <p> Carpool is for working professionals who want to save time and money on their commutes. If you are a professional with a long commute, Carpool is perfect for you!</p>
+            <h4> How it works:</h4>
+            <p>Use the "Find A Carpool" map to find a carpool located near you. Fill out the form and submit your information. Allow our customer service representatives 48 hours to process the information. They will contact you regarding meeting places and other carpool members contact information. Then start carpooling away!</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img src="http://www.rapc.info/Transportation/TDM/image/carpool.JPG" class="img-responsive" id="no-traffic-img">
+          </div>
+        </div>
+        <div class="show">
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-default" type="submit" id="close-about">
+                <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>-->
+    </div>
+
+    <div class="hidden" id="create-hide">
+    <div class="container">
+        <div class="col-sm- col-sm-offset-4" id="create carpool">
+          <h3>Create A Carpool</h3>
+          <form id="create" data-toggle="validator" role="form">
+            <h4 id="create-header">Create Account:</h4>
+            <fieldset>
+              <div class="form-group">
+                <label for="create">Email:</label>
+                <input type="text" class="form-control" id="email-create" placeholder="email" required>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword" class="control-label" id="password">Password:</label>
+                <input type="password" data-minlength="6" class="form-control" id="password-create" placeholder="password" required>
+                <span class="help-block"> Minimum of 6 characters</span>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Password does not match" placeholder="Confirm" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </fieldset>
+            <h4> Personal Information:</h4>
+            <fieldset>
+              <div class="form-group">
+              <label for="create">Name:</label>
+              <input type="text" class="form-control" id="name-create" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+              <label for="create">Address:</label>
+              <input type="text" class="form-control" id="address-create" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+              <label for="create">Phone:</label>
+              <input type="text" class="form-control" id="phone-create" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+              <label for="create">Zip Code (Employer):</label>
+              <input type="text" class="form-control" id="zip-create" placeholder="Zip Code" required> 
+            </div>
+            <div class="form-group">
+              <label for="create">Starting City:</label>
+              <input type="text" class="form-control" id="start-create" placeholder="Starting City" required>
+            </div>
+            <div class="form-group">
+              <label>
+              <input type="checkbox" class="form-control" id="agree" value="" required>
+              I agree to the terms of use.
+              </label>
+            </div>
+            </fieldset>
+            <div class="form-group">
+            <button class="btn btn-primary" type="submit" id="submit">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <div class="container" id="connected-background">
       <div class="row">
@@ -252,28 +335,39 @@
             <a href="http://twitter.com"><i class="fa fa-twitter fa-2x" id="twitter">Twitter</i></a><span>
           </div>
         </div>
+        <div class="show">
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-default" type="submit" id="close-testimonials">
+                <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
 
     <script src="js/app.js"></script>
   </body> 
-  <!--<footer>
-    <div class="container">
-      <div class="row">
-        <div class="col=md-4">
+  <!--<footer>-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col=md-4">
             <div id="social-media-nav">
-            <ul>
-              <li><a href="http://yelp.com"><i class="fa fa-yelp fa-2x" id="yelp"></i></a>
-              <li><a href="http://facebook.com"><i class="fa fa-facebook-official fa-2x" id="facebook"></i></a>
-              <li><a href="http://twitter.com"><i class="fa fa-twitter fa-2x" id="twitter"></i></a>
-            </ul>
+              <ul>
+                <li><a href="http://yelp.com"><i class="fa fa-yelp fa-2x" id="yelp"></i></a>
+                <li><a href="http://facebook.com"><i class="fa fa-facebook-official fa-2x" id="facebook"></i></a>
+                <li><a href="http://twitter.com"><i class="fa fa-twitter fa-2x" id="twitter"></i></a>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-md-2">
-          <div id="company-info">Headquarters:<br>4141 Carpool Way<br>Irvine, CA 92679</br>800-655-5566</div>
+          <div class="col-md-2 col-md-offset-8">
+            <div id="company-info">Headquarters:<br>4141 Carpool Way<br>Irvine, CA 92679</br>800-655-5566
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>-->
+  </footer>
 </html>

@@ -21,8 +21,7 @@ fieldset, form {
   margin-right: 100px;
   margin-top: 50px;
 }
-
-#submit, #newsletter-button, #subscribe-button, #search-ride {
+#submit, #newsletter-button, #subscribe-button, #search-ride, #close-about, #close-testimonials{
   font-family: 'Lato', serif;
   background-color: #BBC6EC;
   color: #1032A0;
@@ -178,4 +177,10 @@ fieldset, form {
 }
 #near-you {
   text-align: center;
+}
+#close-about, #close-testimonials {
+  float: right;
+}
+#email-create, #password-create, #name-create, #address-create, #phone-create, #zip-create, #start-create, #inputPasswordConfirm {
+  width: 300px;
 }
