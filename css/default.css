@@ -1,4 +1,4 @@
-h3, h4 {
+h2, h3, h4, h5 {
   font-family: 'Lato', serif;
 }
 p, li, ul, span {
@@ -51,9 +51,11 @@ fieldset, form {
   padding: 5px;
 }
 #bill {
-  height: 150px;
+  height: 250px;
   margin-top: 30px;
   margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 #steve {
   height: 150px;
@@ -95,8 +97,6 @@ fieldset, form {
 }
 #connected-background {
   background-image: url(../images/roads.jpg);
-  margin-bottom: 20px;
-  margin-top: 20px;
   height: 293px;
   border-top: 2px solid #1032A0;
   border-bottom: 2px solid #1032A0;
@@ -183,4 +183,39 @@ fieldset, form {
 }
 #email-create, #password-create, #name-create, #address-create, #phone-create, #zip-create, #start-create, #inputPasswordConfirm {
   width: 300px;
+}
+#testimonials-background {
+  background-image: url(http://www.wallpapersbyte.com/wp-content/uploads/2015/06/White-Paper-Dents-Bumps-Texture-Background-WallpapersByte-com-1920x1080.jpg);
+}
+#testimonials {
+  color: #1032A0;
+}
+.bill {
+  color: #5174E9;
+}
+#footer {
+  background-color: #1032A0; 
+  color: #BBC6EC;
+  padding-bottom: 10px;
+}
+.quote-heading {
+  text-align: center;
+  background-color: rgba(81, 116, 233, 0.7);
+  color: #1032A0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#howitworks {
+  padding-left: 0;
+  text-align: center;
+}
+#howitworks img {
+  height: 200px;
+  width: 250px;
+}
+#map-div, #map-container {
+  padding-left: 0;
+}
+#find-ride {
+  padding-bottom: 20px;
 }

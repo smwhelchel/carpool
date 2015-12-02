@@ -61,8 +61,36 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+        </div>
+      </div>
+    </div>
+
+     <div class="container" id="howitworks">
+      <div class="row row-centered">
+        <div class="col-md-12" id="howitworksrow">
+          <h2> How It Works</h2>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
+          <img class="img-circle img-responsive center-block" src="https://developer.xamarin.com/samples/monodroid/MapsDemo/Screenshots%5CMapsDemo2.png">
+          <h3>Search for a Carpool</h3>
+          <small>Use the seach form to find carpools in your area.</small>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
+          <img class="img-circle img-responsive center-block" src="https://www.az4education.org/wp-content/themes/thesis_182/custom/images/az4education_apply1.jpg">
+          <h3>Apply to Join</h3>
+          <small>Fill out the form under your preferred carpool to apply.</small>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
+          <img class="img-circle img-responsive center-block" src="http://www.rochester.edu/parking/wp-content/uploads/2015/01/carpool.jpg">
+          <h3>Start Carpooling!</h3>
+          <small>Get the contact information for your carpool members and start carpooling!</small>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+    <div class="container" id="map-container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7" id="map-div">
           <div id="small-map">
             <div id="gradient">
             </div>
@@ -295,63 +323,43 @@
 
   <!--Testimonials-->
   <div class="hidden" id="testimonials-container">
-  <div class="container">
+  <div class="container" id="testimonials-background">
       <div class="row">
-        <div class="col-md-10">
-          <h3 id="testimonials"> What People Are Saying About Us</h3>
-          <div id="bill-quote">
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Bill Gates: Long Beach, CA</p>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <img src="http://www.popsci.com/sites/popsci.com/files/bill_gates_july_2014.jpg" class="img-responsive" id="bill">
+        <div class="col-md-12">
+          <h2 id="testimonials"> What People Are Saying About Us </h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2">
-          <img src="http://ia.media-imdb.com/images/M/MV5BNTI4NTk3NjU1MF5BMl5BanBnXkFtZTcwMTQ5MDg4Ng@@._V1_UY317_CR10,0,214,317_AL_.jpg" class="img-responsive" id="steve">
+        <div class="col-mg-4 col-md-4 col-md-offset-0 col-xs-12">
+          <img class="img-circle img-responsive" src="http://www.popsci.com/sites/popsci.com/files/bill_gates_july_2014.jpg" class="img-responsive" id="bill">
         </div>
-        <div class="col-md-10">
-          <div id="steve-quote">
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Steve Jobs: Anaheim, CA</p>
+        <div class="col-lg-7 col-md-7 col-md-offset- col-xs-12 bill">
+          <div class="quote-heading">
+            <h4> Bill G.</h4>
+            <p>Technology Executive</p>
+            <p> Long Beach, CA</p>
+          </div>
+          <div class="well bottom">
+            <small> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum."</small>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-10">
-          <div id="jack-quote">
-            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum." --Jack Dorsey: Irvine, CA</p>
-          </div>
-        </div>
-        <div class="col-md-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jack_Dorsey_2014.jpg/220px-Jack_Dorsey_2014.jpg" class="img-responsive" id="jack">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12" id="social-media">
-          <span id="span"> People love us on:</span><br>
-          <span id="sm-icons"><a href="http://yelp.com"><i class="fa fa-yelp fa-2x" id="yelp">Yelp</i></a>
-            <a href="http://facebook.com"><i class="fa fa-facebook-official fa-2x" id="facebook">Facebook</i></a>
-            <a href="http://twitter.com"><i class="fa fa-twitter fa-2x" id="twitter">Twitter</i></a><span>
-          </div>
-        </div>
-        <div class="show">
-          <div class="row">
-            <div class="col-sm-12">
-              <button type="button" class="btn btn-default" type="submit" id="close-testimonials">
-                <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-              </button>
-            </div>
+      <div class="show">
+        <div class="row">
+          <div class="col-sm-12">
+            <button type="button" class="btn btn-default" type="submit" id="close-testimonials">
+              <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-    <script src="js/app.js"></script>
+  </div>
+  <script src="js/app.js"></script>
   </body> 
   <!--<footer>-->
     <footer>
-      <div class="container">
+      <div class="container" id="footer">
         <div class="row">
           <div class="col=md-4">
             <div id="social-media-nav">
