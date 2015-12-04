@@ -106,9 +106,7 @@ p, li, ul, span, input, fieldset, form, small {
 }
 #newsletter {
   width: 400px;
-  /*margin-left: 50px;*/
-  color: #BBC6EC;
-  text-align: center;
+  color: #1032A0;
   font-size: 30px;
 }
 .carousel-control.left, 
@@ -211,7 +209,7 @@ p, li, ul, span, input, fieldset, form, small {
   height: 200px;
   width: 250px;
 }
-#map-div, #map-container {
+#map-div {
   padding-left: 0;
 }
 #find-ride {
@@ -231,7 +229,6 @@ p, li, ul, span, input, fieldset, form, small {
   background-image: url(http://www.gncdrivingschool.com/images/slide/slide3.jpg);
   opacity: 0.4;
 }
-
 
 
 

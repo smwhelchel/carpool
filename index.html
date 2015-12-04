@@ -101,8 +101,12 @@
           <div class="form-horizontal" id="search-ride-form">
             <h3> Finding A Ride Is Easy!</h3>
             <h4> Search for rides that match your schedule and location.</h4>
-            <input name="search" placeholder="Where do you work?" id="search-form">
-            <button class="btn btn-primary" type="submit" id="search-ride">Search</button>
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Email">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" id="search-ride">Subscribe</button>
+            </span>
+          </div>
           </div>
         </div>
       </div>
@@ -326,10 +330,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-7 " id="stay-connected">
+        <div class="col-md-3" id="stay-connected">
           <img src="images/get-started.png" class="img-responsive" id="get-started">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-md-offset-1">
+          <div class="well" id="news-well">
           <h3 id="newsletter"> Newsletter</h3>
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Email">
@@ -337,6 +342,7 @@
               <button class="btn btn-default" type="button" id="subscribe-button">Subscribe</button>
             </span>
           </div>
+        </div>
         </div>
       </div>
     </div>
