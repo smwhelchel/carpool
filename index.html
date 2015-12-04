@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/default.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="header-container">
       <div class="row">
         <div class="col-md-4">
           <!--Header-->
@@ -33,64 +33,65 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-      <div id="mycarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#mycarousel" data-slide-to="0"></li>
-          <li data-target="#mycarousel" data-slide-to="1"></li>
-          <li data-target="#mycarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="images/money.png" class="img-responsive" alt="Save Money">
+          <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#mycarousel" data-slide-to="0"></li>
+              <li data-target="#mycarousel" data-slide-to="1"></li>
+              <li data-target="#mycarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/money.png" class="img-responsive" alt="Save Money">
+              </div>
+              <div class="item">
+                <img src="images/safety.png" alt="Safety First">
+              </div>
+              <div class="item">
+                <img src="images/time.png" class="img-responsive" alt="time">
+              </div>
+              <div class="item">
+                <img src="images/environment.png" class="img-responsive" alt="environment">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="item">
-            <img src="images/safety.png" alt="Safety First">
-          </div>
-          <div class="item">
-            <img src="images/time.png" class="img-responsive" alt="time">
-          </div>
-          <div class="item">
-            <img src="images/environment.png" class="img-responsive" alt="environment">
-          </div>
-        </div>
-        <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
         </div>
       </div>
     </div>
 
-     <div class="container" id="howitworks">
+    <div class="container" id="howitworks">
       <div class="row row-centered">
         <div class="col-md-12" id="howitworksrow">
           <h2> How It Works</h2>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
-          <img class="img-circle img-responsive center-block" src="https://developer.xamarin.com/samples/monodroid/MapsDemo/Screenshots%5CMapsDemo2.png">
-          <h3>Search for a Carpool</h3>
-          <small>Use the seach form to find carpools in your area.</small>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
-          <img class="img-circle img-responsive center-block" src="https://www.az4education.org/wp-content/themes/thesis_182/custom/images/az4education_apply1.jpg">
-          <h3>Apply to Join</h3>
-          <small>Fill out the form under your preferred carpool to apply.</small>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
-          <img class="img-circle img-responsive center-block" src="http://www.rochester.edu/parking/wp-content/uploads/2015/01/carpool.jpg">
-          <h3>Start Carpooling!</h3>
-          <small>Get the contact information for your carpool members and start carpooling!</small>
-        </div>
-      </div> 
+            <img class="img-circle img-responsive center-block" src="https://developer.xamarin.com/samples/monodroid/MapsDemo/Screenshots%5CMapsDemo2.png">
+            <h3>Search for a Carpool</h3>
+            <small>Use the seach form to find carpools in your area.</small>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
+            <img class="img-circle img-responsive center-block" src="https://www.az4education.org/wp-content/themes/thesis_182/custom/images/az4education_apply1.jpg">
+            <h3>Apply to Join</h3>
+            <small>Fill out the form under your preferred carpool to apply.</small>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-centered">
+            <img class="img-circle img-responsive center-block" src="http://www.rochester.edu/parking/wp-content/uploads/2015/01/carpool.jpg">
+            <h3>Start Carpooling!</h3>
+            <small>Get the contact information for your carpool members and start carpooling!</small>
+          </div>
+        </div> 
+      </div>
     </div>
-  </div>
 
     <div class="container" id="map-container">
       <div class="row">
-        <div class="col-md-7" id="map-div">
+        <div class="col-md-7" "col-sm-7 col-xs-7" id="map-div">
           <div id="small-map">
             <div id="gradient">
             </div>
@@ -106,125 +107,133 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
     <div class="hidden" id="find-ride">
-    <div class="container">
-      <div class="row">
-        <h3 id="near-you"> Carpools Near You</h3>
-        <div class="col-md-4 col-md-offset-2">
-          <span>
-            <h4> Santa Ana --> Irvine</h4>
-            <data> Arrive trip: Leave 6:30 am to arrive 7:00am</data><br>
-            <data> Return trip: Leave 4:00pm to arrive 5:00pm</data><br>
-            <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
-          </span>
-          <span>
-            <h4> Tustin --> Irvine</h4>
-            <data> Arrive trip: Leave 8:00 am to arrive 8:30am</data><br>
-            <data> Return trip: Leave 5:00pm to arrive 5:30pm</data><br>
-            <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
-          </span>
-          <span>
-            <h4> Los Angeles --> Irvine</h4>
-            <data> Arrive trip: Leave 6:30 am to arrive 8:00am</data><br>
-            <data> Return trip: Leave 5:00pm to arrive 6:30pm</data><br>
-            <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
-          </span>
-        </div>
-        <div class="col-md-4">
-          <span>
-            <h4> Mission Viejo --> Irvine</h4>
-            <data> Arrive trip: Leave 7:30 am to arrive 8:15am</data><br>
-            <data> Return trip: Leave 4:30pm to arrive 5:15pm</data><br>
-            <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
-          </span>
-          <span>
-            <h4> Newport Beach --> Irvine</h4>
-            <data> Arrive trip: Leave 8:00 am to arrive 8:30am</data><br>
-            <data> Return trip: Leave 5:00pm to arrive 5:30pm</data><br>
-            <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
-          </span>
-          <span>
-            <h4> Long Beach --> Irvine</h4>
-            <data> Arrive trip: Leave 6:30 am to arrive 7:30am</data><br>
-            <data> Return trip: Leave 5:00pm to arrive 6:00pm</data><br>
-            <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
-          </span>
+      <div class="container">
+        <div class="row">
+          <h3 id="near-you"> Carpools Near You</h3>
+          <div class="col-md-4 col-md-offset-2">
+            <span>
+              <h4> Santa Ana --> Irvine</h4>
+              <data> Arrive trip: Leave 6:30 am to arrive 7:00am</data><br>
+              <data> Return trip: Leave 4:00pm to arrive 5:00pm</data><br>
+              <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
+            </span>
+            <span>
+              <h4> Tustin --> Irvine</h4>
+              <data> Arrive trip: Leave 8:00 am to arrive 8:30am</data><br>
+              <data> Return trip: Leave 5:00pm to arrive 5:30pm</data><br>
+              <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
+            </span>
+            <span>
+              <h4> Los Angeles --> Irvine</h4>
+              <data> Arrive trip: Leave 6:30 am to arrive 8:00am</data><br>
+              <data> Return trip: Leave 5:00pm to arrive 6:30pm</data><br>
+              <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
+            </span>
+          </div>
+          <div class="col-md-4">
+            <span>
+              <h4> Mission Viejo --> Irvine</h4>
+              <data> Arrive trip: Leave 7:30 am to arrive 8:15am</data><br>
+              <data> Return trip: Leave 4:30pm to arrive 5:15pm</data><br>
+              <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
+            </span>
+            <span>
+              <h4> Newport Beach --> Irvine</h4>
+              <data> Arrive trip: Leave 8:00 am to arrive 8:30am</data><br>
+              <data> Return trip: Leave 5:00pm to arrive 5:30pm</data><br>
+              <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
+            </span>
+            <span>
+              <h4> Long Beach --> Irvine</h4>
+              <data> Arrive trip: Leave 6:30 am to arrive 7:30am</data><br>
+              <data> Return trip: Leave 5:00pm to arrive 6:00pm</data><br>
+              <button type="button" class="btn btn-primary join-button" type="submit" data-toggle="modal" data-target="#myModal"> Join</button>
+            </span>
+          </div>
         </div>
       </div>
     </div>
-    </div>
 
     <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
       <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div class="container" id="join-carpool">
-              <div class="row">
-              <div class="col-md-6">
-                <form id="join">
-                  <h3 id="join1">Join A Carpool:</h3>
-                  <fieldset class="form-group">
-                    <label for="Search">Name:</label>
-                    <input type="text" class="form-control" id="name-join" placeholder="Name">
-                  </fieldset>
-                  <fieldset class="form-group">
-                    <label for="Search">Address:</label>
-                    <input type="text" class="form-control" id="address-join" placeholder="Address">
-                  </fieldset>
-                  <fieldset class="form-group">
-                    <label for="Search">Phone:</label>
-                    <input type="text" class="form-control" id="phone-join" placeholder="Phone">
-                  </fieldset>
-                  <fieldset class="form-group">
-                    <label for="Search">Email:</label>
-                    <input type="text" class="form-control" id="name-join" placeholder="Email">
-                  </fieldset>
-                  <button class="btn btn-primary" type="submit" id="submit">Submit</button>
-                  <p> Thanks for choosing Carpool. We will verify your information and be contacting you shortly with meeting and contact information for your Carpool group.</p>
-                </form>
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="join-carpool">
+                <div class="row">
+                <div class="col-md-6">
+                  <form id="join">
+                    <h3 id="join1">Join A Carpool:</h3>
+                    <fieldset class="form-group">
+                      <label for="Search">Name:</label>
+                      <input type="text" class="form-control" id="name-join" placeholder="Name">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="Search">Address:</label>
+                      <input type="text" class="form-control" id="address-join" placeholder="Address">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="Search">Phone:</label>
+                      <input type="text" class="form-control" id="phone-join" placeholder="Phone">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="Search">Email:</label>
+                      <input type="text" class="form-control" id="name-join" placeholder="Email">
+                    </fieldset>
+                    <button class="btn btn-primary" type="submit" id="submit">Submit</button>
+                    <p> Thanks for choosing Carpool. We will verify your information and be contacting you shortly with meeting and contact information for your Carpool group.</p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="hidden" id="about-page">
-  <div class="container">
-        <div class="row">
-          <div class="col-md-12" "col-sm-12">
-            <h3 id="about"> About us</h3>
+    <div class="hidden" id="about-page">
+      <div class="container" id="about-container">
+        <div class="opacity">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 id="about"> About Us: Why Carpool</h2>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6" "col-sm-12">
-            <h4> What is Carpool?</h4>
-            <p> Carpool is a ridesharing service for working professionals that was founded in Orange County in 2015. It was built on the belief that people waste too much time sitting in their cars. That time could be better utilized doing productive things. Carpool helps to ease that wasted time, by decreasing time of commutes, and allowing people to make connections with other professionals in the area.</p>
-            <h4> Why Carpool?</h4>
-            <ul>
-              <li> Saves time spent sitting on the freeway</li>
-              <li> Saves money on gas</li>
-              <li> Allows you to make new friends with other professionals</li>
-              <li> Helps lower your carbon footprint</li>
-            </ul>
-            <h4> Who does it benefit?</h4>
-            <p> Carpool is for working professionals who want to save time and money on their commutes. If you are a professional with a long commute, Carpool is perfect for you!</p>
-            <h4> How it works:</h4>
-            <p>Use the "Find A Carpool" map to find a carpool located near you. Fill out the form and submit your information. Allow our customer service representatives 48 hours to process the information. They will contact you regarding meeting places and other carpool members contact information. Then start carpooling away!</p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img src="http://www.rapc.info/Transportation/TDM/image/carpool.JPG" class="img-responsive" id="no-traffic-img">
+          <div class="row center-block">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img class="img-responsive" src="http://images.huffingtonpost.com/2015-07-17-1437155465-1424656-SteveJobs.jpg">
+                </div>
+                <div class="panel-body">
+                  <h3> Steve Jobs</h3>
+                  <h4>Position: Founder</h4>
+                  <div class="well">
+                    <small> Steve founded the company in 2015 after growing tired of long and grueling commutes. He formed carpools himself with people he connected, and decided that other professionals could benefit from the same services, so Carpool was born.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <img class="img-responsive" src="http://thenextweb.com/wp-content/blogs.dir/1/files/2015/07/Jack-Dorsey.jpg">
+                </div>
+                <div class="panel-body">
+                  <h3> Jack Dorsey</h3>
+                  <h4>Position: Carpooler</h4>
+                  <div class="well">
+                    <small> Jack was one of the first carpool clients. He wanted a way out of his long commute, and got connected with Steve. He has been in a carpool ever since, and has made several new friends, saved money, helped minimize his carbon footprint, and drastically shortened his commute time. </small>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="show">
@@ -240,64 +249,75 @@
     </div>
 
     <div class="hidden" id="create-hide">
-    <div class="container">
-        <div class="col-sm- col-sm-offset-4" id="create carpool">
-          <h3>Create A Carpool</h3>
+      <div class="container" id="create-container">
+        <div class="opacity">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="create-header"> Sign up for your new Carpool account</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12" id="create carpool">
+            <h3 class="create-header">Create A Carpool</h3>
+          </div>
           <form id="create" data-toggle="validator" role="form">
-            <h4 id="create-header">Create Account:</h4>
-            <fieldset>
-              <div class="form-group">
-                <label for="create">Email:</label>
-                <input type="text" class="form-control" id="email-create" placeholder="email" required>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword" class="control-label" id="password">Password:</label>
-                <input type="password" data-minlength="6" class="form-control" id="password-create" placeholder="password" required>
-                <span class="help-block"> Minimum of 6 characters</span>
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Password does not match" placeholder="Confirm" required>
+            <div class="col-sm-3 col-sm-offset-3" id="form-create">
+              <h4 id="create-header">Create Account:</h4>
+              <fieldset>
+                <div class="form-group">
+                  <label for="create">Email:</label>
+                  <input type="text" class="form-control" id="email-create" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="control-label" id="password">Password:</label>
+                  <input type="password" data-minlength="6" class="form-control" id="password-create" placeholder="password" required>
+                  <span class="help-block"> Minimum of 6 characters</span>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Password does not match" placeholder="Confirm" required>
                 <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                  <label>
+                    <input type="checkbox" class="form-control" id="agree" value="" required>
+                    I agree to the terms of use.
+                  </label>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-primary" type="submit" id="submit">Sign Up</button>
+                </div>
+              </fieldset>
+            </div>
+              <div class="col-sm-3">
+                <h4> Personal Information:</h4>
+                <fieldset>
+                  <div class="form-group">
+                    <label for="create">Name:</label>
+                    <input type="text" class="form-control" id="name-create" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="create">Address:</label>
+                    <input type="text" class="form-control" id="address-create" placeholder="Address" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="create">Phone:</label>
+                    <input type="text" class="form-control" id="phone-create" placeholder="Phone" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="create">Zip Code (Employer):</label>
+                    <input type="text" class="form-control" id="zip-create" placeholder="Zip Code" required> 
+                  </div>
+                  <div class="form-group">
+                    <label for="create">Starting City:</label>
+                    <input type="text" class="form-control" id="start-create" placeholder="Starting City" required>
+                  </div>
+                </fieldset>
               </div>
-            </fieldset>
-            <h4> Personal Information:</h4>
-            <fieldset>
-              <div class="form-group">
-              <label for="create">Name:</label>
-              <input type="text" class="form-control" id="name-create" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-              <label for="create">Address:</label>
-              <input type="text" class="form-control" id="address-create" placeholder="Address" required>
-            </div>
-            <div class="form-group">
-              <label for="create">Phone:</label>
-              <input type="text" class="form-control" id="phone-create" placeholder="Phone" required>
-            </div>
-            <div class="form-group">
-              <label for="create">Zip Code (Employer):</label>
-              <input type="text" class="form-control" id="zip-create" placeholder="Zip Code" required> 
-            </div>
-            <div class="form-group">
-              <label for="create">Starting City:</label>
-              <input type="text" class="form-control" id="start-create" placeholder="Starting City" required>
-            </div>
-            <div class="form-group">
-              <label>
-              <input type="checkbox" class="form-control" id="agree" value="" required>
-              I agree to the terms of use.
-              </label>
-            </div>
-            </fieldset>
-            <div class="form-group">
-            <button class="btn btn-primary" type="submit" id="submit">Sign Up</button>
-            </div>
-          </form>
+            </form>
+          </div>
+        </div>
         </div>
       </div>
-    </div>
-  </div>
-
 
     <div class="container" id="connected-background">
       <div class="row">
@@ -317,46 +337,46 @@
               <button class="btn btn-default" type="button" id="subscribe-button">Subscribe</button>
             </span>
           </div>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
 
   <!--Testimonials-->
-  <div class="hidden" id="testimonials-container">
-  <div class="container" id="testimonials-background">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 id="testimonials"> What People Are Saying About Us </h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-mg-4 col-md-4 col-md-offset-0 col-xs-12">
-          <img class="img-circle img-responsive" src="http://www.popsci.com/sites/popsci.com/files/bill_gates_july_2014.jpg" class="img-responsive" id="bill">
-        </div>
-        <div class="col-lg-7 col-md-7 col-md-offset- col-xs-12 bill">
-          <div class="quote-heading">
-            <h4> Bill G.</h4>
-            <p>Technology Executive</p>
-            <p> Long Beach, CA</p>
-          </div>
-          <div class="well bottom">
-            <small> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum."</small>
-          </div>
-        </div>
-      </div>
-      <div class="show">
+    <div class="hidden" id="testimonials-container">
+    <div class="container" id="testimonials-background">
         <div class="row">
-          <div class="col-sm-12">
-            <button type="button" class="btn btn-default" type="submit" id="close-testimonials">
-              <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
-            </button>
+          <div class="col-md-12">
+            <h2 id="testimonials"> What People Are Saying About Us </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-mg-4 col-md-4 col-md-offset-0 col-xs-12">
+            <img class="img-circle img-responsive" src="http://www.popsci.com/sites/popsci.com/files/bill_gates_july_2014.jpg" class="img-responsive" id="bill">
+          </div>
+          <div class="col-lg-7 col-md-7 col-md-offset- col-xs-12 bill">
+            <div class="quote-heading">
+              <h4> Bill G.</h4>
+              <p>Technology Executive</p>
+              <p> Long Beach, CA</p>
+            </div>
+            <div class="well bottom">
+              <small> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed convallis orci, vel convallis erat. Phasellus ullamcorper sapien orci, vitae aliquam turpis malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elit urna, feugiat ac porttitor sit amet, egestas at metus. Morbi interdum eget ligula sed sodales. Aliquam gravida augue felis, quis aliquam quam semper non. Duis ultrices turpis id enim ullamcorper, id varius purus tempor. Duis aliquam nisi quis pharetra vestibulum. Pellentesque in quam est. Vivamus velit odio, scelerisque a diam non, sollicitudin euismod velit. In at orci nisi. Sed a quam tempus, ullamcorper nisl in, bibendum."</small>
+            </div>
+          </div>
+        </div>
+        <div class="show">
+          <div class="row">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-default" type="submit" id="close-testimonials">
+                <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="js/app.js"></script>
-  </body> 
+    <script src="js/app.js"></script>
+    </body> 
   <!--<footer>-->
     <footer>
       <div class="container" id="footer">

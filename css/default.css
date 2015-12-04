@@ -1,20 +1,16 @@
-h2, h3, h4, h5 {
+h2, h3, h4, h5, label {
   font-family: 'Lato', serif;
 }
-p, li, ul, span {
+p, li, ul, span, input, fieldset, form, small {
   font-family: 'Merriweather', sans-serif;
 }
-label {
-  font-family: 'Lato', serif;
+#header-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-input {
-  font-family: 'Merriweather', sans-serif;
-}
-fieldset, form {
-  font-family: 'Merriweather', sans-serif;
-}
-#about {
-  border-bottom: 5px solid #5174E9;
+#about-container {
+  background-image: url(https://image-pd.s3.envato.com/files/10618162/texture_blue.jpg);
+  padding-left: 0;
 }
 #no-traffic-img {
   float: right;
@@ -110,8 +106,10 @@ fieldset, form {
 }
 #newsletter {
   width: 400px;
-  margin-left: 50px;
+  /*margin-left: 50px;*/
   color: #BBC6EC;
+  text-align: center;
+  font-size: 30px;
 }
 .carousel-control.left, 
 .carousel-control.right {
@@ -147,7 +145,7 @@ fieldset, form {
   background-color: #5174E9;
   margin: 0;
 }
-#questions-div {
+#questions-div, #about, .create-header {
   text-align: center;
 }
 #search-ride-form {
@@ -206,7 +204,7 @@ fieldset, form {
   padding-bottom: 10px;
 }
 #howitworks {
-  padding-left: 0;
+  padding: 0;
   text-align: center;
 }
 #howitworks img {
@@ -219,3 +217,23 @@ fieldset, form {
 #find-ride {
   padding-bottom: 20px;
 }
+#login {
+  float: right;
+}
+#form-create {
+  margin-right: 20px;
+}
+#create-container {
+  position: relative;
+}
+#opacity {
+  position: absolute;
+  background-image: url(http://www.gncdrivingschool.com/images/slide/slide3.jpg);
+  opacity: 0.4;
+}
+
+
+
+
+
+
