@@ -9,8 +9,9 @@ p, li, ul, span, input, fieldset, form, small {
   padding-bottom: 10px;
 }
 #about-container {
-  background-image: url(https://image-pd.s3.envato.com/files/10618162/texture_blue.jpg);
   padding-left: 0;
+  border-top: 2px solid #1032A0;
+  border-bottom: 2px solid #1032A0;
 }
 #no-traffic-img {
   float: right;
@@ -221,15 +222,22 @@ p, li, ul, span, input, fieldset, form, small {
 #form-create {
   margin-right: 20px;
 }
-#create-container {
-  position: relative;
+#create-hide {
+  background-image: url(http://41.media.tumblr.com/1597e56373e2f81b0425944f7c0451b6/tumblr_mnj1roYkPw1rkfd5ko9_1280.jpg);
+  width: 1170px;
+  margin-left: 58px;
 }
-#opacity {
-  position: absolute;
-  background-image: url(http://www.gncdrivingschool.com/images/slide/slide3.jpg);
-  opacity: 0.4;
+.panel-body, #about {
+  color: #1032A0;
 }
-
+#about-page {
+  background-image: url(http://i.huffpost.com/gen/1313570/images/o-101-FREEWAY-facebook.jpg);
+  width: 1170px;
+  margin-left: 58px;
+}
+.opacity {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 
 
