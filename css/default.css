@@ -1,7 +1,7 @@
 h2, h3, h4, h5, label {
   font-family: 'Lato', serif;
 }
-p, li, ul, span, input, fieldset, form, small {
+p, li, ul, span, input, fieldset, form, small, #news-well {
   font-family: 'Merriweather', sans-serif;
 }
 #header-container {
@@ -235,6 +235,9 @@ p, li, ul, span, input, fieldset, form, small {
   margin-left: -15px;
   margin-right: -15px;
   background-color: rgba(255, 255, 255, 0.5);
+}
+#newText {
+  font-family: 'Merriweather', sans-serif;
 }
 
 
