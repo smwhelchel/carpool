@@ -43,9 +43,10 @@ myButton.addEventListener('click', function() {
 })
 
 //change the text in the container after customer creates new carpool
-var myButton=document.getElementById('submit')
+var myButton=document.getElementById('create-button')
 myButton.addEventListener('click', function() {
   var submitNow = document.getElementById('submit-col')
   var newDiv = ('Thanks for creating an account. We will review your information and be contacting you shortly.')
+  submitNow.setAttribute('class', 'create-js')
   submitNow.textContent = newDiv;
 })

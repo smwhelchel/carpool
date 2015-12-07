@@ -18,11 +18,6 @@ form {
   border-top: 2px solid #1032A0;
   border-bottom: 2px solid #1032A0;
 }
-#no-traffic-img {
-  float: right;
-  margin-right: 100px;
-  margin-top: 50px;
-}
 #submit, #newsletter-button, #subscribe-button, #search-ride, #close-about, #close-testimonials{
   font-family: 'Lato', serif;
   background-color: #BBC6EC;
@@ -30,10 +25,6 @@ form {
   border-radius: 10px;
   width: 100px;
   margin-bottom: 20px;
-}
-#sign {
-  margin-top:50px;
-  float: left;
 }
 #background-image {
   background-image: url(../images/map.png);
@@ -45,10 +36,7 @@ form {
   padding: 5px 20px 20px 20px;
   color: #5174E9;
 }
-#find {
-  font-weight: bold;
-}
-#bill-quote, #steve-quote, #jack-quote {
+#bill-quote {
   border-bottom: 2px dotted #5174E9;
   padding: 5px;
 }
@@ -58,18 +46,6 @@ form {
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
-}
-#steve {
-  height: 150px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-#jack {
-  height: 150px;
-}
-#sky {
-  background-image: url(http://www.mrwallpaper.com/wallpapers/doubled-freeway-at-night-1600x900.jpg);
-  padding: 20px;
 }
 #contact-us {
   background-color: rgba(182, 182, 180, 0.5);
@@ -143,39 +119,12 @@ form {
   float: left;
   padding: 10px;
 }
-#questions-row {
-  height: 350px;
-  width: 100%;
-  background-color: #5174E9;
-  margin: 0;
-}
-#questions-div, #about, .create-header {
+#about, .create-header {
   text-align: center;
 }
 #search-ride-form {
   background-color: white;
   margin-top: 70px;
-}
-#savings {
-  height: 200px;
-  width: 100%;
-  color: #1032A0;
-  margin: 0;
-  background-image: -webkit-gradient(
-  linear,
-  left top,
-  left bottom,
-  color-stop(0, #5175E9),
-  color-stop(1, #BBC6EC)
-);
-}
-#saved {
-  text-align: center;
-  margin-top: 30px;
-}
-#dollars {
-  font-family: 'Merriweather', sans-serif;
-  font-size: 72px;
 }
 #near-you {
   text-align: center;
@@ -241,7 +190,17 @@ form {
   margin-right: -15px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-
+#map-container, #find-ride-border, #about-us, #submit-col {
+  border-top: 2px solid #1032A0;
+}
+.create-js {
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  padding-top: 125px;
+  font-size: 24px;
+  color: #1032A0;
+}
 
 
 
