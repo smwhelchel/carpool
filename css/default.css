@@ -1,8 +1,13 @@
 h2, h3, h4, h5, label {
   font-family: 'Lato', serif;
+  color: #1032A0;
 }
-p, li, ul, span, input, fieldset, form, small, #news-well {
+p, li, ul, span, input, fieldset, small, #news-well {
   font-family: 'Merriweather', sans-serif;
+}
+form {
+  font-family: 'Merriweather', sans-serif;
+  color: #1032A0;
 }
 #header-container {
   padding-top: 10px;
@@ -235,9 +240,6 @@ p, li, ul, span, input, fieldset, form, small, #news-well {
   margin-left: -15px;
   margin-right: -15px;
   background-color: rgba(255, 255, 255, 0.5);
-}
-#newText {
-  font-family: 'Merriweather', sans-serif;
 }
 
 
